@@ -1,0 +1,99 @@
+main {
+  background-color: #F5F5F5;
+  height: 400px;
+  max-width: 600px;
+  min-width: 400px;
+  border-radius: 5px;
+  margin: 4em auto;
+  display: flex;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.best-times {
+  width: 300px;
+  border-radius: 0px 3px 3px 0px;
+  background-color: #5035FF;
+  padding: 1em;
+  color: #59E391;
+}
+
+.best-item {
+  color: #F5F5F5;
+  margin-block: 1em;
+}
+
+.best-item::marker {
+  content: '>  ';
+  color: #59E391;
+  
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  margin-inline: 6em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.grid-tenzies {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 1em;
+}
+
+.rolls-info {
+  display: flex;
+  margin-top: 1em;
+  column-gap: 4em;
+}
+
+.roll-button {
+  background-color: #5035FF;
+  border: none;
+  color: #F5F5F5;
+  padding-inline: 3em;
+  height: 3em;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-btn {
+  border: none;
+  margin-left: 1em;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pause-button {
+  background-color: #0B2434;
+  color: #F5F5F5;
+}
+
+.play-button {
+  background-color: #59E391;
+  color: #0B2434;
+}
